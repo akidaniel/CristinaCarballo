@@ -1,0 +1,202 @@
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name = "format-detection" content = "telephone=no" />
+<meta name = "format-detection" content = "date=no" />
+<meta name = "format-detection" content = "address=no" />
+<meta name="description" content="Menú QR interactivo multi-idioma" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta charset="UTF-8">
+<title>Menú QR</title>
+
+<meta name="description" content="Diseño y maquetación de menús QR interactivos y multi-idiomas" />
+
+<meta name="keywords" content="QR, diseño, design, menu, restaurant, comida, paella, vino, bebida, postre, parrilla, carne, pescado, bar, cocktail, carta, sushi" />
+
+<meta name="robots" content="index, follow, all" />
+<meta property="og:title" content="Menú QR interactivo multi-idioma" />
+<meta property="og:url" content="https://menusqr.netlify.app/" />
+<meta property="og:image" content="https://menusqr.netlify.app/images/bar.png"/>
+<meta property="og:description" content="Diseño y maquetación de menús QR interactivos y multi-idioma" />
+  
+<link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0FWW6MQ4LW"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0FWW6MQ4LW');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Foldit:wght@300&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous"-->
+<script src="https://kit.fontawesome.com/fb17da27d8.js" crossorigin="anonymous"></script>
+
+
+<style>
+
+body {
+font-family: "Elsie", serif;
+font-weight: 400;
+font-style: normal;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #ad8786;
+}
+
+a {text-decoration:none; color: #fff;}
+
+header, footer {
+background-color: #ad8786;
+color: #fffaf0;
+padding: 10px;
+text-align: center;
+}
+		
+h1 {transform: scale(1.5);
+font-weight: 400;}
+
+.container {
+margin: 0 auto;
+padding: 20px;
+background: #fffaf0;
+}
+
+.columnas {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 2rem auto;
+gap:30px;
+max-width:1200px;
+color:#926261;
+}
+
+.columna {
+flex-basis: calc(33.33% - 20px);
+box-sizing: border-box;
+margin-bottom: 20px;
+border:2px solid #ad8786;
+border-radius:12px;
+padding: 0 12px;
+height: 300px;
+}
+
+footer {padding:20px;}
+footer a {color:#fff;}
+footer a i {display: inline-block;
+font-family: "Font Awesome 5 Brands";
+color: #fff;
+text-decoration: none;
+font-size: 1.5rem;
+line-height: 2rem;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+width: 2.25rem;
+height: 2.25rem;
+cursor: pointer;
+text-align: center;}
+.corte {background-size:cover; height: 550px; color:#fff; display: flex;
+place-items: flex-end; text-align: center; padding: 1rem 0 0;}
+.corte1 {background-image:url(imagenes/corte_judith.png)}
+.corte2 {background-image:url(imagenes/corte_sara.png)}
+.corte h2, .corte p {width:100%;}
+.corte h2 {font-size: 1.25rem;}
+.corte a {background-color: rgba(250,120,90,0.3); width: 100%;}
+
+@media (max-width: 768px) {
+.columna {flex-basis: calc(100% - 20px);}
+h1 {transform: none;}
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<header>
+        <h1>Cristina Carballo Estilistas</h1>
+    </header>
+
+    <div class="container">
+<div class="columnas">
+<div class="columna corte corte1"><a href="https://www.instagram.com/reel/C2NfQ-1o_F7/?utm_source=ig_web_copy_link">
+<h2>Mira el vídeo del cambio de Judith</h2>
+<p>Balayage tono ice</p></a>
+</div>
+
+<div class="columna corte corte2"><a href="https://www.instagram.com/p/C2Xw9dMoKLf/">
+<h2>Mira el vídeo del cambio de Sara</h2>
+<p>Balayage brillo tono honey</p></a>
+</div>
+  
+      </div>
+      
+        <div class="columnas">
+          
+          <div class="columna">
+<h2>Promoción Febrero</h2>
+<p>Contenido.</p>
+</div>
+            <div class="columna">
+                <h2>Últimos cuidados de invierno</h2>
+                <p>Contenido.</p>
+            </div>
+
+            <div class="columna">
+                <h2>Adelántate a la primavera</h2>
+                <p>Contenido.</p>
+            </div>
+
+            
+          
+             <div class="columna">
+                <h2>Tonos de moda</h2>
+                <p>Contenido.</p>
+            </div>
+             <div class="columna">
+                <h2>Novedades Febrero-Marzo</h2>
+                <p>Contenido.</p>
+            </div>
+             <div class="columna">
+                <h2>Mini hair-blog</h2>
+                <p>Contenido.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer>
+      <p>c/ Roger de Flor 36, El Masnou</p>
+      
+      <a href="https://www.instagram.com/cristina_carballo_estilistas/">Síguenos en Instagram<i class="fa-brands fa-instagram"></i></a>
+    </footer>
+    
+    </body>
+    </html>
