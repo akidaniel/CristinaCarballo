@@ -85,17 +85,125 @@ place-items: flex-end; text-align: center; padding: 1rem 0 0; background-positio
 
 .bt_LES {background:url(https://menusqr.netlify.app/images/flagES.png);background-size: contain; background-repeat: no-repeat;}
 .bt_CAT {background:url(https://menusqr.netlify.app/images/flagCT.png); background-size: contain; background-repeat: no-repeat;}
-
-
 .LES {display:block;}
 .CAT {display:none;}
 
+/*SOCIAL*/
 
+.SOCIAL div {display:block;}
+
+.SOCIAL i {display:none; opacity:0;}
+.FCBK:hover i, .TWITTER:hover i, .WHATS:hover i, .MAIL:hover i {display:none; }
+
+.FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS, .LNKDN, .back-to-top {color:#002278; width:auto; margin: 0 10px;}
+
+
+.SOCIAL i {
+opacity: 0;
+max-height: 1em;
+white-space: nowrap;
+/*transition: .1s;*/
+font-size: 1rem;
+line-height: 110%;
+text-align:right;
+position: absolute;
+right: 3.5rem; 
+font-family: 'Magra', sans-serif; 
+}
+
+
+/*BOTON SOCIAL*/
+.SOCIAL {position:fixed;
+display: block;
+background: rgba(190,125,115,0.7);
+top: 24rem;
+width: 3rem;
+right: 0;
+text-align: center;
+padding: 1rem 0 0;
+border-radius: 10px 0 0 10px;
+bottom: auto;
+margin:0;
+left: auto;
+transform: unset;
+z-index:10;
+}
+
+.FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS, .LNKDN {
+display: inline-block;
+font-family: "Font Awesome 5 Brands";
+color: #fffaf0;
+text-decoration:none;
+font-size: 1.5rem;
+line-height: 2rem;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+width: 2.25rem;
+height: 2.25rem;
+cursor: pointer;
+text-align:center; margin-bottom: 1rem;
+}
+
+.FCBK:before {
+    content: "\f39e";
+}
+
+.TWITTER:before {
+    content: "\e61b";
+}
+.WHATS:before {
+    content: "\f232";
+}
+.MAIL:before {
+	font-family: 'Font Awesome 5 free';
+    content: "\f0e0";
+	font-weight: 900;
+}
+
+.BACK:before {
+	font-family: 'Font Awesome 5 free';
+    content: "\f00d";
+	font-weight: 900;
+}
+.LNKDN:before {content: "\f08c"}
+
+.back-to-top {
+display: none;
+text-align: center;
+font-size: 2rem;
+color:#ECDEC7;
+position: fixed;
+z-index: 90;
+right: 0.25rem;
+bottom: 2px;
+}
+
+.back-to-top:before {
+font-family: 'Font Awesome 5 free';
+content: "\f062";
+font-weight:900;}
 @media (max-width: 768px) {
 .columna {flex-basis: calc(100% - 20px);}
 h1 {transform: none;}
 header {padding:5px;}
 .container {
     padding: 1px 10px}
+footer {margin-bottom: 5rem;}
+
+.SOCIAL {
+top: auto;
+left: 50%;
+transform: translate(-50%, 0%);
+bottom: 0px;
+background:#71535A;
+border-radius: unset;
+width: 100%;
+margin-bottom: -10px;
+text-align: left;
+}
+
+.FCBK, .TWITTER, .MAIL, .HOME, .BACK, .WHATS, .LNKDN {
+margin:0 20px 15px 20px; color: #ECDEC7;
+}
 }
 

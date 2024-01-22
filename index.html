@@ -59,23 +59,83 @@
 
 <body>
 
+<script type="text/javascript">
+// create the back to top button
+$('body').prepend('<a href="#" class="back-to-top"></a>');
+
+var amountScrolled = 300;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
+});
+
+$('a.back-to-top, a.simple-back-to-top').click(function() {
+	$('html, body').animate({scrollTop: 0}, 700);
+	return false;
+});
+</script>
+
+
 <header>
 <h1 class="idioma LES">Cristina Carballo<br><span >Estilistas</span></h1>
         
 <h1 class="idioma CAT">Cristina Carballo<br><span>Estilistes</span></h1>
 
+<!--IDIOMAS-->
 <div class="lang">
-
 <div class=""><span class="bt_LES idioma LES">Español</span>
 <span class="bt_CAT idioma LES">Catalán</span>
-
 <span class="bt_LES idioma CAT">Espanyol</span>
 <span class="bt_CAT idioma CAT">Català</span>
-
 </div>
 </div>
+<!--SOCIAL-->
+<div class="SOCIAL">
+<a class="FCBK" rel="img_src" href=""
 
-    </header>
+    onclick="popUp=window.open(
+        'https://www.facebook.com/sharer.php?u=https://akidaniel.github.io/CristinaCarballo/index.html',
+        'popupwindow',
+        'scrollbars=yes,width=800,height=400');
+    popUp.focus();
+    return false"  title="Compartir en Facebook">
+    <i class="visuallyhidden">Compartir en<br>Facebook</i>
+</a>
+
+  <a class="TWITTER" rel="nofollow"
+    href="https://twitter.com/"
+    onclick="popUp=window.open(
+        'https://twitter.com/intent/tweet?text=\https://akidaniel.github.io/CristinaCarballo/index.html',
+        'popupwindow',
+        'scrollbars=yes,width=800,height=400');
+    popUp.focus();
+    return false" title="Compartir en Twitter">
+   <i class="visuallyhidden">Compartir<br>en Twitter</i>
+</a>
+
+
+<a class="WHATS" rel="nofollow"  href=""
+    onclick="popUp=window.open(
+        'whatsapp://send?text=https://akidaniel.github.io/CristinaCarballo/index.html',
+        'popupwindow',
+        'scrollbars=yes,width=800,height=400');
+    popUp.focus();
+    return false" title="Compartir en WhatsApp"
+    data-action="share/whatsapp/share">
+    <i class="visuallyhidden">Enviar por<br>WhatsApp</i>
+</a>
+
+
+<a class="MAIL" rel="nofollow"
+    href="mailto:?subject=Cristina Carballo Estilistas&body=https://akidaniel.github.io/CristinaCarballo/index.html" title="Enviar por mail">
+    <i class="visuallyhidden">Enviar<br>por mail</i>
+</a>
+</div>
+</header>
 
     <div class="container">
 <div class="columnas">
@@ -136,7 +196,11 @@
     <footer>
       <p>c/ Roger de Flor 36, El Masnou</p>
       
-      <a href="https://www.instagram.com/cristina_carballo_estilistas/">Síguenos en Instagram<i class="fa-brands fa-instagram"></i></a>
+<a class="idioma LES" href="https://www.instagram.com/cristina_carballo_estilistas/">Síguenos en Instagram<i class="fa-brands fa-instagram"></i></a>
+   
+<a class="idioma CAT" href="https://www.instagram.com/cristina_carballo_estilistas/">Segueix-nos en Instagram<i class="fa-brands fa-instagram"></i></a>
+   
+   
     </footer>
     
     </body>
