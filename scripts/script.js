@@ -25,7 +25,7 @@ var icons = [
 $(document).ready(function() {
 
 var display = function(block_name) {
-  $('.SUBTITULO, .menuitem, .descr, .listado, .destacado, .principal').css('display', 'none');
+  $('.idioma').css('display', 'none');
   $('#' + block_name).css('display', 'block');
   $('.' + block_name).css('display', 'block');
 
@@ -36,11 +36,11 @@ $('.UK').on('click', function() {
   display('LUK', $(this));
 });
 
-$('.ES').on('click', function() {
+$('.bt_LES').on('click', function() {
   display('LES', $(this));
 });
 
-$('.CT').on('click', function() {
+$('.bt_CAT').on('click', function() {
   display('CAT', $(this));
 });
 

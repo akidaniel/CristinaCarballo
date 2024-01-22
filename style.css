@@ -72,6 +72,25 @@ place-items: flex-end; text-align: center; padding: 1rem 0 0; background-positio
 .corte h2 {margin: 15px auto -6px;}
 .corte a {background-color: rgba(250,120,90,0.3); width: 100%; border-radius: 0 0 10px 10px; color:#fffaf0;}
 
+
+/*IDIOMA*/
+.lang {margin-top: -1rem;}
+.lang div {display: flex; justify-content: center; list-style:none; margin: 0;}
+.lang span {width: 4rem;
+    height: 4rem; margin: 0 0.5rem; line-height: 950%;
+    text-align: center;
+    font-size: 12px;
+    color: #fffaf0; font-style: italic;}	
+.bt_LES, .bt_CAT {cursor: pointer;}
+
+.bt_LES {background:url(https://menusqr.netlify.app/images/flagES.png);background-size: contain; background-repeat: no-repeat;}
+.bt_CAT {background:url(https://menusqr.netlify.app/images/flagCT.png); background-size: contain; background-repeat: no-repeat;}
+
+
+.LES {display:block;}
+.CAT {display:none;}
+
+
 @media (max-width: 768px) {
 .columna {flex-basis: calc(100% - 20px);}
 h1 {transform: none;}
