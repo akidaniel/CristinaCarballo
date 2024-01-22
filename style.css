@@ -22,7 +22,7 @@ text-align: center;
 }
 		
 h1 {transform: scale(1.5); letter-spacing: 2px;
-font-weight: 400; font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;text-transform: uppercase;
+font-weight: 400; font-family: century-gothic,Century Gothic,CenturyGothic,AppleGothic,sans-serif;text-transform: uppercase;
 line-height: 80%;}
 h1 span {letter-spacing:12px; font-size: 20px}
 .container {
@@ -75,7 +75,7 @@ place-items: flex-end; text-align: center; padding: 1rem 0 0; background-positio
 @media (max-width: 768px) {
 .columna {flex-basis: calc(100% - 20px);}
 h1 {transform: none;}
-header {padding:0 5px;}
+header {padding:5px;}
 .container {
     padding: 1px 10px}
 }
