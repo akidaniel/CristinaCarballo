@@ -7,7 +7,7 @@
 <meta name = "format-detection" content = "date=no" />
 <meta name = "format-detection" content = "address=no" />
 <meta name="description" content="Menú QR interactivo multi-idioma" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 <meta charset="UTF-8">
 <title>Menú QR</title>
 
@@ -104,7 +104,7 @@ border-radius:12px;
 padding: 0 12px;
 height: 300px;
 }
-
+.columna h2, .corte h2 {font-size:2rem;}
 footer {padding:20px;}
 footer a {color:#fff;}
 footer a i {display: inline-block;
@@ -123,13 +123,15 @@ text-align: center;}
 place-items: flex-end; text-align: center; padding: 1rem 0 0;}
 .corte1 {background-image:url(imagenes/corte_judith.png)}
 .corte2 {background-image:url(imagenes/corte_sara.png)}
-.corte h2, .corte p {width:100%;}
-.corte h2 {font-size: 1.25rem;}
-.corte a {background-color: rgba(250,120,90,0.3); width: 100%;}
+.corte h2 {margin: 15px auto -6px;}
+.corte a {background-color: rgba(250,120,90,0.3); width: 100%; border-radius: 0 0 10px 10px;}
 
 @media (max-width: 768px) {
 .columna {flex-basis: calc(100% - 20px);}
 h1 {transform: none;}
+header {padding:0 5px;}
+.container {
+    padding: 1px 10px}
 }
 
 </style>
