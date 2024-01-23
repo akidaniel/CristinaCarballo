@@ -69,9 +69,17 @@ text-align: center;}
 place-items: flex-end; text-align: center; padding: 1rem 0 0; background-position-y: 20%;}
 .corte1 {background-image:url(imagenes/corte_judith.png)}
 .corte2 {background-image:url(imagenes/corte_sara.png); background-position-y: 40%;}
-.corte h2 {margin: 15px auto -6px;}
-.corte a {background-color: rgba(250,120,90,0.3); width: 100%; border-radius: 0 0 10px 10px; color:#fffaf0;}
-
+.corte h2 {margin: -30px auto -10px;}
+.corte a {background-color: rgba(250,120,90,0.3); border-radius: 0 0 10px 10px; color:#fffaf0; height: 120px;}
+.corte a:before {	font-family: 'Font Awesome 5 free';
+content: "\f04b";
+font-weight: 900;
+position: relative;
+top: -160px;
+font-size: 6rem;
+line-height: 0px;
+text-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+}
 
 /*IDIOMA*/
 .lang {margin-top: -1rem;}
@@ -108,7 +116,7 @@ line-height: 110%;
 text-align:right;
 position: absolute;
 right: 3.5rem; 
-font-family: 'Magra', sans-serif; 
+font-family: "Elsie", serif; 
 }
 
 
@@ -127,7 +135,16 @@ margin:0;
 left: auto;
 transform: unset;
 z-index:10;
+font-family: "Elsie", serif; 
+
 }
+
+.SOCIAL span {position: absolute;
+    top: -40px;
+    right: 10px;
+    color: black;
+    text-align: right;
+	color:#926261}
 
 .FCBK, .TWITTER, .INSTA, .MAIL, .BACK, .HOME, .WHATS, .LNKDN {
 display: inline-block;
@@ -201,6 +218,14 @@ width: 100%;
 margin-bottom: -10px;
 text-align: left;
 }
+
+.SOCIAL span {margin: 0 0 10px 15px; line-height: 30%;
+position: relative;
+    top: unset;
+    right: unset;
+    text-align: left;
+    color: #ECDEC7;}
+
 
 .FCBK, .TWITTER, .MAIL, .HOME, .BACK, .WHATS, .LNKDN {
 margin:0 15px 15px 20px; color: #ECDEC7;
